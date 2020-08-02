@@ -54,9 +54,11 @@ public class Combinations_77 {
 
         for (int i = begin; i <= n; i++) {
             // process current
+            // add i into the current combination
             stack.push(i);
 
             // drill down
+            // use next integers to complete the combination
             recursiveCombine(n, k, i + 1, stack);
 
             // reverse current
